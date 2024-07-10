@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00283c;
+}
+
+header {
+    background: #001C30;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr; /* Adjust grid to include the new column */
+    align-items: center;
+    padding: 1em;
+    position: fixed; /* Fix the header at the top */
+    width: 100%; /* Ensure the header spans the full width */
+    height: 60px;
+    top: 0; /* Position at the top */
+    left: 0;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1); /* Add shadow for 3D effect */
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+.logo img {
+    background-color: #001C30;
+    margin-left: 70px;
+    height: 100px;
+}
+
+.lists nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2px;
+    display: flex;
+}
+
+.lists nav ul li {
+    margin: 0px 7px;
+    float: left;
+    display: inline-block;
+}
+
+.lists nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding to prevent shifting */
+    display: inline-block; /* Ensure padding applies to the whole link area */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.lists nav ul li a:hover {
+    background-color: #0A4D7E;
+    border-radius: 10px; /* Apply border radius for rounded corners */
+}
+
+.bb {
+    background-color: #ED0C6C;
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 1em 0;
+    cursor: pointer;
+    border-radius: 0.25em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bb a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+
+.bb:hover {
+    background-color: #ED0C6C;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.main_blue {
+    background-color: #001C30;
+    background-image: url('images/Main_blue_front.webp');
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: 75% 55%; /* Adjust as needed */
+    color: white;
+    padding: 6.5em 0;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 60px; /* Adjust top margin to account for fixed header */
+    height: 100vh; /* Make each section take up the full height of the viewport */
+}
+
+section:not(#home){
+    padding: 4em 2em;
+    color: white;
+    margin-top: 60px;
+    height: 100vh; /* Make each section take up the full height of the viewport */
+}
+footer {
+    background: #4CDF08;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
